@@ -27,7 +27,7 @@
                     // display the same form with previous user input
                     else 
                     {
-                        echo "</br></br><h2>Error - please correct the problems listed below</h2>";
+                        echo "</br></br><h4>Error - please correct the problems listed below</h4>";
                         require 'include/registrationForm.inc';
                     }
                 }
