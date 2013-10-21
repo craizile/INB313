@@ -21,16 +21,9 @@
 <form id="form-id">
 		Name : <input type="text" name="nametxt"  required><br><br>
 		Phone : <input type="" name="phonetxt" required><br><br>
-		Payment Method : <input type="radio" name="payment" value="Credit Card" id="div1"> Credit Card  <input type="radio" name="payment" value="paypal" id="div2"> PayPal <br><br>
-		
-<<<<<<< HEAD
-		Payment Method : <input type="radio" name="payment" value="Credit Card" onclick="javascript:yesnoCheck();" id="yesCheck" checked> Credit Card  <input type="radio" name="payment" value="paypal" onclick="javascript:yesnoCheck();" id="noCheck"> PayPal <br><br>
-		
+		Payment Method : <input type="radio" name="payment" value="Credit Card" id="div1"> Credit Card  <input type="radio" name="payment" value="paypal" id="div2"> PayPal <br><br>	
 		Card Number : <input type="text" name="txtcard1" maxlength="4" size="4" required>  <input type="text" name="txtcard2" maxlength="4" size="4"required>  <input type="text" name="txtcard3" maxlength="4" size="4" required>  <input type="text" name="txtcard4" maxlength="4" size="4" required> <br>
 		
-		<!-- Pic of cc logos -->
-		&nbsp&nbsp&nbsp&nbsp<img src="images/cclogo.jpg" alt="cclogospic" width="300" height="28"> <br> <br>
-=======
 		     <div id='formdiv1' style='display:none'>
 		     
 		     Card Number : <input type="text" name="txtcard1" maxlength="4" size="4" required />  <input type="text" name="txtcard2" maxlength="4" size="4" required />  <input type="text" name="txtcard3" maxlength="4" size="4" required />  <input type="text" name="txtcard4" maxlength="4" size="4" required /> <br>
@@ -48,7 +41,6 @@
 		    <a href="http://www.Paypal.com/"> Pay using PayPal </a>
 		    <p> When you press the PayPal link, you will be directed to PayPal website where you can login or create a PayPal account and submit your payment. Upon full payment, you will be transferred back in to this website to obtain booking information.</p>
 		    </div>
->>>>>>> 809ab8049d1746b596d3499f02ea4b286fde2c3e
 		
 		<a href="successbook.php"><button>Purchase</button></a> <input type="reset" value="Delete">
 		
