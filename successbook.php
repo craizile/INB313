@@ -7,7 +7,7 @@
 
 	<link type="text/css" rel="stylesheet" href="header.css" media="screen" /> 
 	<link type="text/css" rel="stylesheet" href="style.css" media="screen" /> 
-
+	<script type="text/javascript" src="script.js"></script>
 
 	<title>  Successfully Booked  </title>
 
@@ -18,9 +18,13 @@
 
 <?php include 'header.html' ; ?>
 
-<h1> Successfully Booked !! </h1>
-<p> <b> Your form has been succesfully submitted and booked. Please wait for the owner to confirm the payment and they will contact you immidiately. If error or fraud occurs, contact us as soon as possible! Thank you for using our service and enjoy. </b> <p> <br> <br>	
+<div class="content">
+	<div class="bodyContainer">
 
+		<h3> Successfully Booked !! </h3>
+		<p> Your form has been succesfully submitted and booked. Please wait for the owner to confirm the payment and they will contact you immidiately. If error or fraud occurs, contact us as soon as possible! Thank you for using our service and enjoy.  <p> <br> <br>	
+	</div>
+</div>
 <?php include 'footer.html' ; ?>
 
 

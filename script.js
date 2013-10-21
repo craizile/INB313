@@ -9,3 +9,18 @@ function clearSearch(a) {
 		a.value="";
 	}
 }
+
+$('#form-id').change(function() {
+    if ($('#div1').prop('checked')) {
+        $('#formdiv1').show();
+    }
+    else {
+        $('#formdiv1').hide();
+    }
+    if ($('#div2').prop('checked')) {
+        $('#formdiv2').show();
+    }
+    else {
+        $('#formdiv2').hide();
+    }
+});

@@ -3,6 +3,7 @@
 	<Head>
 		<link type="text/css" rel="stylesheet" href="header.css" media="screen" /> 
 		<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+        <script type="text/javascript" src="script.js"></script>
 		<Title>Register</Title>
 	</head>
 	<body>
