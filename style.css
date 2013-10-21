@@ -11,18 +11,60 @@ a {
 }
 
 .bodyContainer {
+	/* The Class to put everything in the middle */
 	position:relative;
-	width: 880px;
+	width: 1000px;
  	margin: 0 auto;
- 	padding: 60px;
- 	margin-top: -30px;
+ 	padding: 20px 0 20px 0;
 }
 
-.intro {
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+/* Search box */
+
+.search {
+	/* This is the container */
+	width:800px;
+	margin:0 auto;
 }
+
+.searchBox{
+	/* This is the actual search box */
+	margin: 40px 0 20px 0;
+	border: none;
+	color:#888888;
+	background:url("images/searchBox.png") no-repeat;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:15px;
+	height:49px;
+	line-height:30px;
+	outline:medium none;
+	padding-left:50px;
+	text-shadow:1px 1px 0 white;
+	width:800px;
+}
+
+.submitButton{
+	/* no submit button shown, press enter to search */
+	display: none;
+}
+
+.content {
+	/* Container for the white background content */
+	margin-top: 20px;
+	background-color: #fff;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	/*-webkit-box-shadow: 1px 1px 22px rgba(53, 50, 50, 0.26);
+	-moz-box-shadow: 1px 1px 22px rgba(53, 50, 50, 0.26);
+	box-shadow: 1px 1px 22px rgba(53, 50, 50, 0.26);*/
+}
+
+
+
+
+/* Home Page */
 
 h3 {
+	/* Rent a private parking space , Place a listing */
 	font-family: "Verdana";
 	font-weight: 700;
 	color: #5f5e5e;
@@ -33,42 +75,71 @@ h3 {
 	text-rendering: optimizelegibility;
 }
 
-.introRow {
-	width: 500px;
-	margin-right: 10px;
-	height: 110px;
-}
-
-.introBlock {
-	width: 220px;
-	position: relative;
-	margin: 20px;
-}
-
-.right {
-	top: -124px;
-	left: 230px;
-}
-
-
 h4 {
+	/* Block titles */
 	color : #666;
-	font-size: 16px;
-	padding-left: 50px;
+	font-size: 22px;
 	margin-bottom: 5px;
 	height: 40px;
 	line-height: 42px;
 	font-weight: normal;
 }
 
-.introRow p {
-	height: 50px;
+/* Benifits blocks */
+
+.home-benefits {
+	/* Container */
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	height: 220px;
+	overflow: hidden;
+}
+
+.introBlock {
+	/* 4 benefits blocks */
+	width: 210px;
+	position: relative;
+	margin: 20px;
+	padding-right: 25px;
+	height: 200px;
+	border-right: 1px solid #dcdcdc;
+}
+
+	/* Positioning the 2nd,3rd and 4th benefits block */
+
+.b2 {
+	top: -230px;
+	left: 250px;
+}
+
+.b3 {
+	top: -460px;
+	left: 510px;
+}
+
+.b4 {
+	top: -690px;
+	left: 770px;
+	border-right: none;
+}
+
+.home-benefits h4 {
+	/* Block titles */
+	padding-left: 50px;
+}
+
+.home-benefits p {
+	/* Block content */
+	text-align: justify;
+	width: 200px;
+	height: 60px;
 	color: #666;
 	font-style: normal;
-	font-size: 12px;
+	font-size: 18px;
 	margin-right: 20px;
 	margin-left: 10px;
 }
+
+	/* All the icons */
 
 .icon {
 	background: no-repeat top left;
@@ -90,4 +161,47 @@ h4 {
 .clock {
 	background-image: url("images/clock.jpg");
 }
+
+
+/* Horizontal line */
+
+.hr {
+	width: 900px;
+	margin: 80px 45px;
+}
+
+/* Rent out your space */
+
+.list {
+	/* Container */
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	height: 350px;
+	overflow: hidden;
+	margin-left: 70px;
+}
+
+
+/* Image for Rent out your space */
+
+.listBox {
+	position: relative;
+	top: -250px;
+	left: 400px;
+}
+
+.listBox h4 {
+	margin-left: 20px;
+}
+
+.listBox p {
+	margin-left: 20px;
+	color: #666;
+	font-style: normal;
+	font-size: 18px;
+	width: 350px;
+}
+
+
+
+
 

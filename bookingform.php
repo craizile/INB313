@@ -28,7 +28,7 @@
 		Card Number : <input type="text" name="txtcard1" maxlength="4" size="4" required>  <input type="text" name="txtcard2" maxlength="4" size="4"required>  <input type="text" name="txtcard3" maxlength="4" size="4" required>  <input type="text" name="txtcard4" maxlength="4" size="4" required> <br>
 		
 		<!-- Pic of cc logos -->
-		&nbsp&nbsp&nbsp&nbsp<img src="cclogo.jpg" alt="cclogospic" width="300" height="28"> <br> <br>
+		&nbsp&nbsp&nbsp&nbsp<img src="images/cclogo.jpg" alt="cclogospic" width="300" height="28"> <br> <br>
 		
 		Cardholder Name : <input type="text" name="ccname" size="30" maxlength="20" required><br><br>
 		

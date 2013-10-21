@@ -7,8 +7,8 @@
 
 	<link type="text/css" rel="stylesheet" href="header.css" media="screen" /> 
 	<link type="text/css" rel="stylesheet" href="style.css" media="screen" /> 
-	<!-- <link type="text/css" rel="stylesheet" href="searchBox.css" media="screen" />  -->
-	<!-- <script type="text/javascript" src="searchBox.js"></script> -->
+	<script type="text/javascript" src="script.js"></script>
+	
 
 
 	<title>  Team Zen </title>
@@ -22,46 +22,60 @@
 
 <?php include 'header.html' ; ?>
 
-<form id="searchForm" method="post">
-    <!-- <fieldset> -->
+<div class="search">
+	<form class="searchForm" method="post">
+	    <input class="searchBox" type="text" value="Search for parking - Where do you need to park?" onfocus="clearSearch(this)" onblur="searchText(this)" />
+	    <input type="submit" value="Submit" class="submitButton" />
+	</form>
+</div>
 
-        <input id="s" type="text" />
-        <input type="submit" value="Submit" id="submitButton" />
+<div class="content">
+	<div class="bodyContainer">
+		<!-- Rent a private parking -->
 
-    <!-- </fieldset> -->
-</form>
-
-<div class="intro">
-	<h3>Rent a private parking spot</h3>
-	<div id="home-benefits">
-		<div class="introRow">
+		<h3>Rent a private parking spot</h3>
+		<div class="home-benefits">
 			<div class="introBlock">
 				<h4 class="pig icon">Save money</h4>
 				<p>
 					Renting a private garage, driveway or car park space can save you up to 70% on your parking costs.
 				</p>
 			</div>
-			<div class="introBlock right">
+			<div class="introBlock b2">
 				<h4 class="people icon">Community</h4>
 				<p>
 					Join us to our expanding community. We'd love you to be part of it.
 				</p>
 			</div>
-		</div>
-		<div class="introRow">
-			<div class="introBlock">
+			<div class="introBlock b3">
 				<h4 class="lock icon">Safe &amp; secure</h4>
 				<p>
 					Our booking system is safe and secure, you can have peace of mind when booking.
 				</p>
 			</div>
-			<div class="introBlock right">
+			<div class="introBlock b4">
 				<h4 class="clock icon">Quick &amp; easy</h4>
 				<p>
 				You can search, book and pay for a parking space in under 5 minutes.
 				</p>
 			</div>
 		</div>
+		
+		<img src="images/hr.png" class="hr"/> 
+		
+		<div class="list">
+			<img src="images/logo.png" alt="logo" class="logo"/>
+			<div class="listBox">
+				<h3>Rent out your space</h3>
+				<h4> <a href="#">Sign Up Now to place a listing </a></h4>
+				<p>
+					Convert extra or unused space in your home or business into a regular income
+				</p>
+
+			</div>
+		</div>
+
+
 	</div>
 </div>
 
