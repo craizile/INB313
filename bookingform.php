@@ -18,26 +18,50 @@
 
 <?php include 'header.html' ; ?>
 
-<form>
+<form id="form-id">
 		Name : <input type="text" name="nametxt"  required><br><br>
-		
 		Phone : <input type="" name="phonetxt" required><br><br>
+		Payment Method : <input type="radio" name="payment" value="Credit Card" id="div1"> Credit Card  <input type="radio" name="payment" value="paypal" id="div2"> PayPal <br><br>
 		
-		Payment Method : <input type="radio" name="payment" value="Credit Card" checked> Credit Card  <input type="radio" name="payment" value="paypal" onclick="javascript:yesnoCheck();" id="noCheck"> PayPal <br><br>
+		     <div id='formdiv1' style='display:none'>
+		     
+		     Card Number : <input type="text" name="txtcard1" maxlength="4" size="4" required />  <input type="text" name="txtcard2" maxlength="4" size="4" required />  <input type="text" name="txtcard3" maxlength="4" size="4" required />  <input type="text" name="txtcard4" maxlength="4" size="4" required /> <br>
+		     
+		     
+		     &nbsp&nbsp&nbsp&nbsp<img src="cclogo.jpg" alt="cclogospic" width="300" height="28"> <br> <br>
+		     
+		     
+		     Cardholder Name : <input type="text" name="ccname" size="30" maxlength="20" required><br><br>
+		     Expiry Date : <input type="text" name="expmonth" size="2" maxlength="2" required> <input type="text" name="expyear" size="4" maxlength="4" required> <br><br>
+		     CVV : <input type="text" maxlength="3" name="ccCVV" size="3" required> <br><br>
+		    </div> 
+		    
+		    <div id="formdiv2" style="display:none">
+		    <a href="http://www.Paypal.com/"> Pay using PayPal </a>
+		    <p> When you press the PayPal link, you will be directed to PayPal website where you can login or create a PayPal account and submit your payment. Upon full payment, you will be transferred back in to this website to obtain booking information.</p>
+		    </div>
 		
-		Card Number : <input type="text" name="txtcard1" maxlength="4" size="4" required>  <input type="text" name="txtcard2" maxlength="4" size="4"required>  <input type="text" name="txtcard3" maxlength="4" size="4" required>  <input type="text" name="txtcard4" maxlength="4" size="4" required> <br>
+		<a href="successbook.php"><button>Purchase</button></a> <input type="reset" value="Delete">
 		
-		<!-- Pic of cc logos -->
-		&nbsp&nbsp&nbsp&nbsp<img src="cclogo.jpg" alt="cclogospic" width="300" height="28"> <br> <br>
-		
-		Cardholder Name : <input type="text" name="ccname" size="30" maxlength="20" required><br><br>
-		
-		Expiry Date : <input type="text" name="expmonth" size="2" maxlength="2" required> <input type="text" name="expyear" size="4" maxlength="4" required> <br><br>
-		
-		CVV : <input type="text" maxlength="3" name="ccCVV" size="3" required> <br><br>
-		
-		<input type="submit" value="Purchase" onclick="successbook.html"> <input type="reset" value="Delete">
-</form>	
+</form>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+$('#form-id').change(function() {
+    if ($('#div1').prop('checked')) {
+        $('#formdiv1').show();
+    } 
+    else {
+        $('#formdiv1').hide();
+    }
+    if ($('#div2').prop('checked')) {
+        $('#formdiv2').show();
+    }
+    else {
+        $('#formdiv2').hide();
+    }
+});
+  </script>
 
 <?php include 'footer.html' ; ?>
 
