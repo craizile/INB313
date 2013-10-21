@@ -31,7 +31,8 @@ echo "$count results returned </br></br>";
 while($data = mysql_fetch_row($result)){
 	$purchaseID = $data[0];
 	echo("<tr><td><header><b>$data[1]</b></header>$data[2]$data[4]</br>Price: $$data[3]</br>
-		</form><input type='submit'name='transmit'value='Purchase'></form>
+		</form>
+		<button type='submit' value=' .$purchaseID. ' name='purchase'>Purchase</button></form>
 		</br></br></td></tr>");
 
 }
