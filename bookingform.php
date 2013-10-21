@@ -16,7 +16,7 @@
 
 <body>
 
-<?php include 'header.html' ; ?>
+ <?php include 'header.html' ; ?> 
 
 <form>
 		Name : <input type="text" name="nametxt"  required><br><br>
