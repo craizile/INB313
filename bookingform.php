@@ -16,14 +16,14 @@
 
 <body>
 
- <?php include 'header.html' ; ?> 
+<?php include 'header.html' ; ?>
 
 <form>
 		Name : <input type="text" name="nametxt"  required><br><br>
 		
 		Phone : <input type="" name="phonetxt" required><br><br>
 		
-		Payment Method : <input type="radio" name="payment" value="Credit Card" onclick="javascript:yesnoCheck();" id="yesCheck" checked> Credit Card  <input type="radio" name="payment" value="paypal" onclick="javascript:yesnoCheck();" id="noCheck"> PayPal <br><br>
+		Payment Method : <input type="radio" name="payment" value="Credit Card" checked> Credit Card  <input type="radio" name="payment" value="paypal" onclick="javascript:yesnoCheck();" id="noCheck"> PayPal <br><br>
 		
 		Card Number : <input type="text" name="txtcard1" maxlength="4" size="4" required>  <input type="text" name="txtcard2" maxlength="4" size="4"required>  <input type="text" name="txtcard3" maxlength="4" size="4" required>  <input type="text" name="txtcard4" maxlength="4" size="4" required> <br>
 		
