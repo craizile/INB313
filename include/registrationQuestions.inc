@@ -17,13 +17,15 @@
     function errorLabel($errors, $name) 
     {
         $error = errorMessage($errors, $name);
-        echo "&nbsp;<span id=\"{$name}Error\" class=\"error\" style=\"color:red\">$error</span>";
+        echo "&nbsp;<span id=\"{$name}Error\" class=\"error\">$error</span>";
     }
     
     /* Display text label associated with text field */
     function label($name, $label) 
     {
-        echo "<label for=\"$name\">$label: </label>";
+        echo "<div class=\"control-group required\"><label for=\"id_first_name\" 
+                class=\"control-label\">$label</label><div class=\"controls\">";
+        
     }
     
     /* Stores user input to be used if registration is unsuccessful and the 
@@ -51,11 +53,15 @@
         $value = postedValue($name);
         
         // display text field
-        echo "<input type=\"text\" size=\"20\" id=\"$name\" name=\"$name\" 
-               value=\"$value\" maxlength=\"$maxlength\"/>";
+        echo "<input value=\"\" type=\"text\" id=\"$name\" name=\"$name\" value=\"$value\" 
+                maxlength=\"$maxlength\" />";
+
+               
+
         // display relevant error text to relevant text field
         errorLabel($errors, $name);
-        echo "<br/><br/>";
+
+        echo "</div></div>" ;
     }
     
     /* Create text field for users to provide password input, each character is displayed
@@ -73,7 +79,7 @@
                value=\"$value\" maxlength=\"8\"/>";
         // display relevant error text to relevant text field
         errorLabel($errors, $name);
-        echo "<br/><br/>";
+        echo "</div></div>" ;
     }
     
     /* Creates three text fields for users to input the day, month and year. Displays error 
@@ -83,31 +89,36 @@
         $date = array('day', 'month', 'year');
         $maxLength = array(2, 2, 4);
         $size = array(10, 10, 20);
+        $class = array('small', 'small', 'medium');
         
         // if user provided input, remember input
         $valueList = array($valueDay = postedValue($date[0]), $valueMonth = postedValue($date[1]), 
                            $valueYear = postedValue($date[2]));
         
-        echo "Date of birth (dd/mm/yyyy): <br/> ";
+        echo "<div class=\"control-group required\"><label for=\"id_first_name\" 
+                class=\"control-label\">Date of birth (dd/mm/yyyy)</label><div class=\"controls\">";
+        
         // display three text fields for use for the user's input of the date
         for ($i = 0; $i < 3; $i++) 
         {
 
-            echo "<input type=\"text\" size=\"$size[$i]\" id=\"$date[$i]\" 
+            echo "<input type=\"text\" class=\"$class[$i]\" size=\"$size[$i]\" id=\"$date[$i]\" 
                    name=\"$date[$i]\" value=\"$valueList[$i]\" maxLength=\"$maxLength[$i]\"/>";
-            echo "&nbsp;";
+            
             // display relevant error text to relevant text field
             errorLabel($errors, $date[$i]);
-            echo "&nbsp;";
+           
         }
-        echo "<br/><br/>";
+        echo "</div></div>" ;
     }
     
     /* Allow users to sumbit the registration form or navigate to the index webpage */
     function submitCancelBtns($pageFile) 
     {
-        echo "<input type=\"submit\" value=\"Submit\"/>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href=\"$pageFile\">Cancel</a>";
+        echo "<div class=\"modal-footer\">
+                <button type=\"submit\" class=\"btn btn-large btn-success\">Register</button>
+                <button class=\"btn btn-large btn-success\">
+                <a href=\"$pageFile\">Cancel</a></button></div>";
     }
     
     /* Creates a drop down list. Displays error message alongside text field and remembers previous input. */
@@ -132,14 +143,16 @@
         }
         echo "</select>";
         errorLabel($errors, $name);
-        echo "<br/><br/>";
+        echo "</div></div>" ;
     }   
     
     /* Creates a single check box */
     function checkBox($errors, $name) 
     {
-        echo "You must read and accept the <a href=\"\">
-              <b>Terms and Conditions</b></a> to use this service. Do you accept? Yes";
+        echo "<div class=\"control-group required\">
+                    <label class=\"control-label\"></label>
+                    <div class=\"controls\">
+                        <label for=\"id_tcs\" class=\"checkbox\">";
         
         // remembers if the user has selected the checkbox
         // if form fails to validate
@@ -153,8 +166,8 @@
             echo "<input type=\"checkbox\" name=\"$name\" value=\"Yes\" />";
         }
      
-        echo "<br/>If you do not accept, please click Cancel at the bottom of the page.";
+        echo "I have read and agree to the <a href=\"#\">terms and conditions</a></label>";
         errorLabel($errors, $name);
-        echo "<br/><br/>";
+        echo "</div></div></div>" ;
     }
 ?>

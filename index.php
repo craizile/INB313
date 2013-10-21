@@ -22,13 +22,6 @@
 
 <?php include 'header.html' ; ?>
 
-<div class="search">
-	<form class="searchForm" method="post">
-	    <input class="searchBox" type="text" value="Search for parking - Where do you need to park?" onfocus="clearSearch(this)" onblur="searchText(this)" />
-	    <input type="submit" value="Submit" class="submitButton" />
-	</form>
-</div>
-
 <div class="content">
 	<div class="bodyContainer">
 		<!-- Rent a private parking -->

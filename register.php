@@ -9,6 +9,8 @@
 		<?php include 'header.html' ; ?>
 		    <!-- Present the user with a registration form that will validate user's input using
 			     server side validation -->
+
+        <div class="bodyContainer">
             <?php
                 $errors = array();
                 
@@ -26,7 +28,6 @@
                     // display the same form with previous user input
                     else 
                     {
-                        echo "</br></br><h4>Error - please correct the problems listed below</h4>";
                         require 'include/registrationForm.inc';
                     }
                 }
@@ -36,6 +37,7 @@
                     require 'include/registrationForm.inc';
                 }
             ?>
+        </div>
         <?php include 'footer.html' ; ?>
 	</body>
 </html>
