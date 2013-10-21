@@ -170,4 +170,18 @@
         errorLabel($errors, $name);
         echo "</div></div></div>" ;
     }
+	
+	/* check the database if the username and password combination exist in
+     * the database */
+    function checkPassword($username, $password)
+    {
+        $pdo = new PDO('mysql:host=localhost; dbname=RentCarPark', 'root', '');
+        $stmt = $pdo->prepare('SELECT * FROM customerSupply WHERE username = :username and
+                               password = :password');
+        $stmt->bindvalue(':username', $username);
+        $stmt->bindvalue(':username', $password);
+        $stmt->execute();
+        
+        return $stmt->rowCount() > 0;
+    }
 ?>
