@@ -10,43 +10,6 @@
 	<!--<script type="text/javascript" src="javascript.js"></script>  -->
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-<style type="text/css">
-
-
-
-
-
-
-
-
-
-
-
-</style>
-
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascrpit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-<script type="text/javascript">
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
-
-
-
-
 	<title>  Team Zen </title>
 
 
@@ -58,17 +21,41 @@
 
 <?php include 'header.html' ; ?>
 
-
-<div class="bodyContainer">
-<h3>Welcome</h3>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laboriosam, voluptatem, ipsa vitae maiores quibusdam error deleniti amet voluptatibus nesciunt perspiciatis at dolorem libero mollitia dicta aspernatur provident natus consequuntur inventore eaque quis! Minus, tenetur voluptate obcaecati sint soluta ab fugit enim incidunt beatae perspiciatis rem quia sed possimus. Nemo, eligendi nesciunt ex obcaecati quam porro architecto magnam. Repudiandae, quae, natus aperiam omnis iusto tempore error debitis vitae! Eveniet, illum, facilis animi reiciendis veniam esse fugiat illo soluta explicabo quam incidunt culpa doloribus. Odit, blanditiis, aliquam adipisci quam error in totam maiores inventore est reprehenderit molestiae sed ducimus omnis culpa.
-</p>
-
-
-
+<div class="intro">
+	<h3>Rent a private parking spot</h3>
+	<div id="home-benefits">
+		<div class="introRow">
+			<div class="introBlock">
+				<h4 class="pig icon">Save money</h4>
+				<p>
+					Renting a private garage, driveway or car park space can save you up to 70% on your parking costs.
+				</p>
+			</div>
+			<div class="introBlock right">
+				<h4 class="people icon">Community</h4>
+				<p>
+					Join us to our expanding community. We'd love you to be part of it.
+				</p>
+			</div>
+		</div>
+		<div class="introRow">
+			<div class="introBlock">
+				<h4 class="lock icon">Safe &amp; secure</h4>
+				<p>
+					Our booking system is safe and secure, you can have peace of mind when booking.
+				</p>
+			</div>
+			<div class="introBlock right">
+				<h4 class="clock icon">Quick &amp; easy</h4>
+				<p>
+				You can search, book and pay for a parking space in under 5 minutes.
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
 
+<?php include 'footer.html' ; ?>
 
 
 </body>

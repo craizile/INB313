@@ -7,7 +7,6 @@
 	</head>
 	<body>
 		<?php include 'header.html' ; ?>
-		<div class="bodyContainer">
 		    <!-- Present the user with a registration form that will validate user's input using
 			     server side validation -->
             <?php
@@ -37,6 +36,6 @@
                     require 'include/registrationForm.inc';
                 }
             ?>
-		</div>
+        <?php include 'footer.html' ; ?>
 	</body>
 </html>
