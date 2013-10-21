@@ -19,7 +19,7 @@
 <?php include 'header.html' ; ?>
 
 <h1> Successfully Booked !! </h1>
-<h5> <b> Your form has been succesfully submitted and booked. Please wait for the owner to confirm the payment and they will contact you immidiately. If error or fraud occurs, contact us as soon as possible! Thank you for using our service and enjoy. </b> </h5> <br> <br>	
+<p> <b> Your form has been succesfully submitted and booked. Please wait for the owner to confirm the payment and they will contact you immidiately. If error or fraud occurs, contact us as soon as possible! Thank you for using our service and enjoy. </b> <p> <br> <br>	
 
 <?php include 'footer.html' ; ?>
 
