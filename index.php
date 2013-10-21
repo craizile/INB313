@@ -7,7 +7,8 @@
 
 	<link type="text/css" rel="stylesheet" href="header.css" media="screen" /> 
 	<link type="text/css" rel="stylesheet" href="style.css" media="screen" /> 
-	<!--<script type="text/javascript" src="javascript.js"></script>  -->
+	<!-- <link type="text/css" rel="stylesheet" href="searchBox.css" media="screen" />  -->
+	<!-- <script type="text/javascript" src="searchBox.js"></script> -->
 
 
 	<title>  Team Zen </title>
@@ -20,6 +21,15 @@
 <body>
 
 <?php include 'header.html' ; ?>
+
+<form id="searchForm" method="post">
+    <!-- <fieldset> -->
+
+        <input id="s" type="text" />
+        <input type="submit" value="Submit" id="submitButton" />
+
+    <!-- </fieldset> -->
+</form>
 
 <div class="intro">
 	<h3>Rent a private parking spot</h3>
