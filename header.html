@@ -1,6 +1,17 @@
 <div class="header">
 	<div class="container">
 		<h1>Team Zen</h1>
+		<?php
+		    session_start();
+		    if (!isset($_SESSION['isCustSupp']))
+		    {
+		       echo "<h2><a href=\"login.php\">Log in</a> / <a href=\"register.php\">Register</a></h2>";
+		    }
+		    else if(isset($_SESSION['isCustSupp']))
+		    {
+		    	echo "<h2>Hello " . $_SESSION['username'] . " / <a href=\"logout.php\">Log out</a></h2>";
+		    }
+		?>  
 		<h2><a href="login.php">Log in</a> / <a href="register.php">Register</a></h2>
 	</div>
 </div>
@@ -10,7 +21,16 @@
 		<ul>
 		   <li class='active'><a href='index.php'><span>Home</span></a></li>
 		   <li><a href='#'><span>Rent Car Park</span></a></li>
-		   <li class="hidden"><a href="AddCarpark.php"><span>Place a listing</span></a></li>
+		   <?php
+			    if (!isset($_SESSION['isCustSupp']))
+			    {
+			       echo "<li class=\"hidden\"><a href=\"AddCarpark.php\"><span>Place a listing</span></a></li>";
+			    }
+			    else if(isset($_SESSION['isCustSupp']))
+			    {
+			    	echo "<li><a href=\"AddCarpark.php\"><span>Place a listing</span></a></li>";
+			    }
+			?>  
 		   <li><a href='howitworks.php'><span>How it works</span></a></li>
 		   <li class='last'><a href='contactus.php'><span>About us / Contact</span></a></li>
 		</ul>
