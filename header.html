@@ -10,7 +10,6 @@
 		<ul>
 		   <li class='active'><a href='index.php'><span>Home</span></a></li>
 		   <li><a href='#'><span>Rent Car Park</span></a></li>
-		   <li class="hidden"><a href="AddCarpark.php"><span>Place a listing</span></a></li>
 		   <li><a href='#'><span>How it works</span></a></li>
 		   <li class='last'><a href='#'><span>About us / Contact</span></a></li>
 		</ul>
@@ -18,8 +17,8 @@
 </div>
 
 <div class="search">
-	<form action="CarparkResult.php" class="searchForm" method="post">
-	    <input class="searchBox" type="text" name="keywords" value="Search for parking - Where do you need to park?" onfocus="clearSearch(this)" onblur="searchText(this)" />
+	<form class="searchForm" method="post">
+	    <input class="searchBox" type="text" value="Search for parking - Where do you need to park?" onfocus="clearSearch(this)" onblur="searchText(this)" />
 	    <input type="submit" value="Submit" class="submitButton" />
 	</form>
 </div>

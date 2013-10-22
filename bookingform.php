@@ -23,7 +23,7 @@
 	    	Booking <span>for a car park</span>
 	    </div>
 
-		<form action="successbook.php" id="form-id" class="form">
+		<form id="form-id" class="form">
 			<div class="modal-body">
 				<div class="control-group required ">
 					<label for="id_first_name" class="control-label"> Name </label>		
@@ -77,8 +77,8 @@
 			</div>
 
 			<div class="modal-footer">
-   				 <button type="submit" class="btn btn-large btn-success">
-   				 	Purchase
+   				 <button class="btn btn-large btn-success">
+   				 	<a href="successbook.php">Purchase</a>
    				 </button>
    				 <button type="reset" class="btn btn-large btn-success">
    				 	Delete

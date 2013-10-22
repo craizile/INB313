@@ -4,8 +4,8 @@ session_start();
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password=""; // Mysql password 
-$db_name="test"; // Database name 
-$tbl_name="carparks"; // Table name 
+$db_name="RentCarPark"; // Database name 
+$tbl_name="CarParks"; // Table name 
 
 // Connect to server and select databse.
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
@@ -35,6 +35,6 @@ $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 
 }
 
-mysql_query("INSERT INTO carparks (ad_name, ad_description, price) VALUES ('$ad_name','$ad_description','$price')");
+mysql_query("INSERT INTO carparks (AdName, AdDescription,  Price) VALUES ('$ad_name','$ad_description','$price')");
 echo "poo";
 ?>

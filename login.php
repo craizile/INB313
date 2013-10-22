@@ -6,7 +6,7 @@
         {
             session_start();
             $_SESSION['isCustSupp'] = true;
-            header('Location: http://localhost/admin.php');
+            header('Location: http://localhost/INB313/custSupp.php');
             exit();
         } 
         else 
