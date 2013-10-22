@@ -8,7 +8,7 @@
         <h1>Logout page</h1>
 			<!-- Sign out out of customer supply account -->
 			<?php
-				unset($_SERVER['isCustSupp']);
+                session_unset();
 			?>
 			<h2>You have now logged out</h2>
     </body> 
