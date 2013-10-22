@@ -17,8 +17,8 @@
 </div>
 
 <div class="search">
-	<form class="searchForm" method="post">
-	    <input class="searchBox" type="text" value="Search for parking - Where do you need to park?" onfocus="clearSearch(this)" onblur="searchText(this)" />
+	<form action="CarparkResult.php" class="searchForm" method="post">
+	    <input class="searchBox" type="text" name="keywords" value="Search for parking - Where do you need to park?" onfocus="clearSearch(this)" onblur="searchText(this)" />
 	    <input type="submit" value="Submit" class="submitButton" />
 	</form>
 </div>

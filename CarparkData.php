@@ -3,7 +3,7 @@ session_start();
 
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
-$password="password911"; // Mysql password 
+$password=""; // Mysql password 
 $db_name="test"; // Database name 
 $tbl_name="carparks"; // Table name 
 
