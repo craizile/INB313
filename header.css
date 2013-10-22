@@ -9,6 +9,10 @@
   top:0;
 }
 
+.hidden {
+  display:none;
+}
+
 h1 {
   /* Website title */
   padding-top: 60px;
