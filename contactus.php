@@ -8,23 +8,23 @@
 		<?php include 'header.html' ; ?>
 		<div class="content">
 			<div class="bodyContainer">
-				<div class="contactUsTitle"><br>
+				<h3>
 					About Us/Contact
-				</div>
-				<br><br>
+				</h3>
 				<div class="aboutContent">
-					Team Zen is an online for parking spaces. We connect homes and 
-					businesses with parking capacity to individuals seeking either 
-					long term or short term parking.<br/><br/>					
-					This website was first inspired by a friend who had an idea of making
-					the life of the community more convenient. At the same time it also
-					make profit. Those who are away for the week may put up their parking 
-					space in the website for rent. It also benefit those who want to park 
-					around that area to avoid any law violation.<br/><br/>					
-					This service is made to make both parties convinient as they do not have
-					to meet in order to make arrangement and payment.
+					<p>
+						Team Zen is an online for parking spaces. We connect homes and 
+						businesses with parking capacity to individuals seeking either 
+						long term or short term parking.<br/><br/>					
+						This website was first inspired by a friend who had an idea of making
+						the life of the community more convenient. At the same time it also
+						make profit. Those who are away for the week may put up their parking 
+						space in the website for rent. It also benefit those who want to park 
+						around that area to avoid any law violation.<br/><br/>					
+						This service is made to make both parties convinient as they do not have
+						to meet in order to make arrangement and payment.
+					</p>
 				</div>
-				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<img src = "http://storage.canoe.ca/v1/dynamic_resize/sws_path/suns-prod-images/1297454719343_ORIGINAL.jpg?quality=80&size=650x&stmp=1376520699777" 
 				border=0 width=300px height=300px> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<img src= "http://i.dailymail.co.uk/i/pix/2012/10/04/article-2213081-0323DC0F0000044D-999_634x327.jpg"
@@ -33,11 +33,11 @@
 				border=0 width=300px height=300px>
 				<br><br>
 				<div class="contContent">
-				
-				For more information you can contact us using the following email:<br/><br/>
-				TeamZen@hotmail.com<br/><br/>
-				General inquiries and support number: (07) 1234 5678
-				
+					<p>
+						For more information you can contact us using the following email:<br/><br/>
+						Enquiry@TeamZen.com <br/><br/>
+						General inquiries and support number: (07) 1234 5678
+					</p>	
 				</div>
 			</div>
 		</div>
