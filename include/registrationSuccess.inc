@@ -23,8 +23,4 @@
     $stmt->bindValue(':Suburb', $_POST['suburb']);
     $stmt->bindValue(':Postcode', $_POST['postCode']);
     $stmt->execute();
-	
-	
-	echo $_POST['firstName'];
-    echo $Test;
 ?>

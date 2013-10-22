@@ -4,9 +4,11 @@
     <head>
         <title>Rent a Car Park</title>
     </head>
-    <body onload="document.signup.username.focus();"> 	
+    <body> 	
         <h1>Welcome Customer</h1>
 		
 		Customer Supply Page.
+
+		<a href="logout.php">Log out</a>
     </body> 
 </html> 

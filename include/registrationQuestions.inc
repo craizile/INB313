@@ -176,10 +176,10 @@
     function checkPassword($username, $password)
     {
         $pdo = new PDO('mysql:host=localhost; dbname=RentCarPark', 'root', '');
-        $stmt = $pdo->prepare('SELECT * FROM customerSupply WHERE username = :username and
+        $stmt = $pdo->prepare('SELECT * FROM customerSupply WHERE Emailaddress = :emailAddress and
                                password = :password');
-        $stmt->bindvalue(':username', $username);
-        $stmt->bindvalue(':username', $password);
+        $stmt->bindvalue(':emailAddress', $username);
+        $stmt->bindvalue(':password', $password);
         $stmt->execute();
         
         return $stmt->rowCount() > 0;
