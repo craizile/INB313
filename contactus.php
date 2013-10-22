@@ -40,7 +40,8 @@
 			<div class="contContent">
 				<?php
 				echo 'For more information you can contact us using the following email:<br/><br/>';
-				echo 'TeamZen@hotmail.com';
+				echo 'TeamZen@hotmail.com<br/><br/>';
+				echo 'General inquiries and support number: (07) 1234 5678';
 				?>
 			</div>
 		</div>
