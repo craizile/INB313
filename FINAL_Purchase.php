@@ -2,8 +2,9 @@
 
 $price = $_POST['submit'];
 $purchaseID = $_POST['ID'];
-echo "ADVERTISEMENT ID: $purchaseID </br>
-Price: $$price</br>
-CHECK OUT";
+echo "Items in Cart</br>
+CarparkID: $purchaseID </br>
+Amount Owed: $$price</br>
+<button name='price' value='$price'>CHECK OUT</button>";
 
 ?>
