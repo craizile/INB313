@@ -16,6 +16,8 @@ ADD A CARPARK</br>
 <label for="price">Price:</label>
 <input type="text" name="price"/></br>
 
+<label for="location">Car Park Suburb:</label>
+<input type="text" name="location"/></br>
 
 Select Image: <input type="file" name="image" ></br>
 

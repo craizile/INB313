@@ -21,7 +21,7 @@ if(!isset($keywords) || $keywords == false){
     $stmt -> execute();
 }
 else{
-  $stmt=$conn->prepare("SELECT * FROM $tbl_name WHERE UPPER(AdName) LIKE '%$keywords%' OR UPPER(AdDescription) LIKE '%$keywords%'");
+  $stmt=$conn->prepare("SELECT * FROM $tbl_name WHERE UPPER(AdName) LIKE '%$keywords%' OR UPPER(AdDescription) LIKE '%$keywords%' OR UPPER(Location) LIKE '%$keywords%'");
   $stmt->execute ();
 }
 
@@ -47,7 +47,9 @@ foreach ($stmt as $data) {
         echo("
         <td>	
 		<img src=".$picture."></img>
-		</td></tr>");
+		</td>");
+		echo("
+		<td>Suburb: $data[5]</td></tr>");
 		echo("
 		<tr><td>
 		</br>Price: $$data[3]</br>
