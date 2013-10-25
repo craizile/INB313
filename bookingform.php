@@ -23,7 +23,7 @@
 	    	Booking <span>for a car park</span>
 	    </div>
 
-		<form action="successbook.php" class="form">
+		<form id="form-id" action="successbook.php" class="form">
 			<div class="modal-body">
 				<div class="control-group required ">
 					<label for="id_first_name" class="control-label"> Name </label>		
@@ -48,7 +48,7 @@
 						<label for="id_first_name" class="control-label"> Card Number </label>		
 						<div class="controls">
 							<input type="text" name="txtcard1" maxlength="4" size="4" class="small" required />  <input type="text" name="txtcard2" maxlength="4" size="4" class="small"required />  <input type="text" name="txtcard3" maxlength="4" size="4" class="small" required />  <input type="text" name="txtcard4" maxlength="4" size="4" class="small" required /> <br>
-							<!-- <img src="images/cclogo.jpg" alt="cclogospic" width="300" height="28" /> -->
+							<!--<img src="images/cclogo.jpg" alt="cclogospic" width="300" height="28" />-->
 						</div>
 	                </div>
 	                <div class="control-group required ">
@@ -77,9 +77,9 @@
 			</div>
 
 			<div class="modal-footer">
-   				 <button type="submit" class="btn btn-large btn-success">
-   				 	Comfirm
-   				 </button>
+   				 <a href="successbook.php"><button type="button" class="btn btn-large btn-success">
+   				 	Confirm
+   				 </button></a>
    				 <button type="reset" class="btn btn-large btn-success">
    				 	Delete
    				 </button>
