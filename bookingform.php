@@ -17,6 +17,13 @@
 
 <?php include 'header.html' ; ?>
 
+<?php
+
+$price = $_POST['submit'];
+$purchaseID = $_POST['ID'];
+
+?>
+
 <div class="bodyContainer">
 	<div class="modal">        
 	    <div class="modal-header">
@@ -25,6 +32,10 @@
 
 		<form id="form-id" action="successbook.php" class="form">
 			<div class="modal-body">
+				<?php 
+				echo "CarparkID: $purchaseID </br>";
+				echo "Amount Owed: $$price</br>";
+				?>
 				<div class="control-group required ">
 					<label for="id_first_name" class="control-label"> Name </label>		
 					<div class="controls">

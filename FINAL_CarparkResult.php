@@ -1,10 +1,31 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<link type="text/css" rel="stylesheet" href="header.css" media="screen" /> 
+	<link type="text/css" rel="stylesheet" href="style.css" media="screen" /> 
+	<script type="text/javascript" src="script.js"></script>
+
+	<title>  <!-- Insert Title  -->  </title>
+
+
+</head>
+
+<body>
+
+<?php include 'header.html' ; ?>
+
+<div class="content">
+	<div class="bodyContainer">
+
 <?php
-session_start();
 
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
-$password="password911"; // Mysql password 
+$password=""; // Mysql password 
 $db_name="rentcarpark"; // Database name 
 $tbl_name="carparks"; // Table name 
 
@@ -33,29 +54,42 @@ $arrayPrice = [];
 $arrayID = [];
 $index= -1;
 
+// 1: name,
+// 2: dis,
+// .pic: pic,
+// 5: suburb,
+// 3: price,
+
+
 foreach ($stmt as $data) {
 	    $arrayPrice[] = $data[3];
 	    $arrayID[] = $data[0];
 	    $index = $index+1;
 	    $picture = "data:image/jpeg;base64," . base64_encode($data[4]);
-        echo("<form action='FINAL_Purchase.php' method='post'>
-        	<table><tr><td><header><b>$data[1]</b></header></tr>
-        	<tr><td>");
         echo("
-        	$data[2]
-        	</td>");
-        echo("
-        <td>	
-		<img src=".$picture."></img>
-		</td>");
-		echo("
-		<td>Suburb: $data[5]</td></tr>");
-		echo("
-		<tr><td>
-		</br>Price: $$data[3]</br>
-		<input type='hidden' value='$arrayID[$index]' name='ID'>
-		<button name='submit' value='$arrayPrice[$index]'>Purchase</button>
-		</br></br></td></table></form>");
+        	<form action='bookingform.php' method='post'>
+        	<div class=\"block1\">
+	        	<span class=\"name\"><h4>$data[1]</h4></span>
+	        	<span class=\"price\">Price: $$data[3]</span>
+	        	<div class=\"img\"><img src=".$picture."></img></div>
+	        	<span class=\"dis\"><b>$data[5]</b></span>
+	        	<span class=\"dis2\"><p>$data[2]</p></span>
+
+				<div class=\"button\">
+					<input type='hidden' value='$arrayID[$index]' name='ID'>
+					<button name='submit' value='$arrayPrice[$index]'>Purchase</button>
+				</div>
+
+			</div>
+			</form>");
     }
 ?>
+</div>
+</div>
+
+<?php include 'footer.html' ; ?>
+
+
+</body>
+
 </html>

@@ -9,7 +9,7 @@
 	<link type="text/css" rel="stylesheet" href="style.css" media="screen" /> 
 	<script type="text/javascript" src="script.js"></script>
 
-	<title>  Purchase  </title>
+	<title>  <!-- Insert Title  -->  </title>
 
 
 </head>
@@ -18,20 +18,12 @@
 
 <?php include 'header.html' ; ?>
 
-<form action="bookingform.php"
+<div class="content">
+	<div class="bodyContainer">
+		<h3> Car park successfully added </h3>
 
-<?php
-
-
-$price = $_POST['submit'];
-$purchaseID = $_POST['ID'];
-echo "Items in Cart</br>
-CarparkID: $purchaseID </br>
-Amount Owed: $$price</br>
-<button name='price' value='$price'>CHECK OUT</button>";
-
-?>
-
+</div>
+</div>
 
 <?php include 'footer.html' ; ?>
 

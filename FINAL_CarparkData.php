@@ -3,7 +3,7 @@ session_start();
 
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
-$password="password911"; // Mysql password 
+$password=""; // Mysql password 
 $db_name="rentcarpark"; // Database name 
 $tbl_name="carparks"; // Table name 
 
@@ -24,5 +24,5 @@ $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 //Input all data to DB
 $stmt = $conn->prepare("INSERT INTO carparks (AdName, AdDescription, Price, Picture, Location) VALUES ('$ad_name','$ad_description','$price', '$image','$location')");
 $stmt->execute();
-echo "poo";
+header( "Location: added.php" );
 ?>
